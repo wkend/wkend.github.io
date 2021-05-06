@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Github&#43;hugo搭建个人博客">
+<meta itemprop="description" content="0x01 github新建仓库 Repository name：xxx.github.io 进入仓库设置： 进入Pages页面， 建立GitHub Pages 验证，访问地址https:/"><meta itemprop="datePublished" content="2021-05-06T15:33:07&#43;08:00" />
+<meta itemprop="dateModified" content="2021-05-06T15:33:07&#43;08:00" />
+<meta itemprop="wordCount" content="842">
+<meta itemprop="keywords" content="个人," /><meta property="og:title" content="Github&#43;hugo搭建个人博客" />
+<meta property="og:description" content="0x01 github新建仓库 Repository name：xxx.github.io 进入仓库设置： 进入Pages页面， 建立GitHub Pages 验证，访问地址https:/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-06T15:33:07&#43;08:00" />
+<meta property="article:modified_time" content="2021-05-06T15:33:07&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Github&#43;hugo搭建个人博客"/>
+<meta name="twitter:description" content="0x01 github新建仓库 Repository name：xxx.github.io 进入仓库设置： 进入Pages页面， 建立GitHub Pages 验证，访问地址https:/"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Github&#43;hugo搭建个人博客</title>
+	<link rel="stylesheet" href="https://wkend.github.io/css/style.min.f74778e3020c87c304fb5982e09b92ba63a5c7f202996d4c7283d6057acfe9c1.css" integrity="sha256-90d44wIMh8ME+1mC4JuSumOlx/ICmW1McoPWBXrP6cE=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://wkend.github.io/">wkend&#39;s blog</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://wkend.github.io/posts/">Posts</a>
+				<a href="https://wkend.github.io/about-hugo/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://wkend.github.io/posts/">Posts</a></li>
+			<li><a href="https://wkend.github.io/about-hugo/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>May 6, 2021</span></div>
+				<h1>Github&#43;hugo搭建个人博客</h1>
+			</header>
+			<div class="content">
+				<h2 id="0x01-github新建仓库">0x01 github新建仓库<a href="#0x01-github新建仓库" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506111420970.png" alt="image-20210506111420970"></p>
+<p>Repository name：<code>xxx.github.io</code></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506142008117.png" alt="image-20210506142008117"></p>
+<p>进入仓库设置：</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506111829164.png" alt="image-20210506111829164"></p>
+<p>进入<code>Pages</code>页面，</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506111949907.png" alt="image-20210506111949907"></p>
+<p>建立GitHub Pages</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112134367.png" alt="image-20210506112134367"></p>
+<p>验证，访问地址<code>https://wkend.github.io/wkend.giothub.io/</code></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112313446.png" alt="image-20210506112313446"></p>
+<h2 id="0x02-安装配置hugo">0x02 安装配置hugo<a href="#0x02-安装配置hugo" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>下载地址：https://github.com/gohugoio/hugo/releases</p>
+<p>配置环境变量</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112755582.png" alt="image-20210506112755582"></p>
+<p>验证：</p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506112849635.png" alt="image-20210506112849635"></p>
+<h2 id="0x03-初始化">0x03 初始化<a href="#0x03-初始化" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h3 id="31-本地文件目录生成">3.1 本地文件目录生成<a href="#31-本地文件目录生成" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>在本地选择一个路径来存放博客，在选好的路径下执行：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site MyBlog
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506113306794.png" alt="image-20210506113306794"></p>
+<p>查看生成的本地目录结构</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">├─archetypes	 <span class="c1"># 内容类型，在创建新内容时自动生成内容的配置</span>
+├─content	 <span class="c1"># 网站内容，Markdown 文件</span>
+├─data	<span class="c1"># 存放自定义或者导入的模板</span>
+├─layouts	<span class="c1"># 网站模版，选择主题后会将主题中的 layouts 文件夹中的内容复制到此文件夹中</span>
+├─static	<span class="c1"># 包含 CSS、JavaScript、Fonts、media 等，决定网站的外观。选择主题后会将主题中的 ststic 文件夹中的内容复制到此文件夹中</span>
+└─themes	<span class="c1"># 存放主题文件</span>
+</code></pre></div><h3 id="32-配置主题hermit">3.2 配置主题hermit<a href="#32-配置主题hermit" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>官方主题模板地址：<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fthemes.gohugo.io%2F">https://themes.gohugo.io/</a></p>
+<p>将主题文件放到<code>/MyBlog/themes</code>目录下，</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/Track3/hermit.git themes/hermit
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506133753324.png" alt="image-20210506133753324"></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506114319593.png" alt="image-20210506114319593"></p>
+<p>利用主题文件夹中的配置文件<code>MyBlog\themes\hermit\exampleSite\config.toml</code>覆盖博客配置文件<code>MyBlog\config.toml</code></p>
+<p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506114632492.png" alt="image-20210506114632492"></p>
+<h3 id="33-测试验证">3.3 测试验证<a href="#33-测试验证" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>新建一篇博文<code>test.md</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new posts/test.md
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506114919541.png" alt="image-20210506114919541"></p>
+<p>编辑新生成的博文<code>\MyBlog\content\posts\test.md</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---
+title: &#34;Test&#34;
+date: 2021-05-06T11:48:26+08:00
+draft: false	<span class="ni">#此处要改为false</span>，否则在首页不会显示！
+toc: false
+images:
+tags: 
+  <span class="k">-</span> test
+
+---
+
+<span class="gh"># test
+</span><span class="gh"></span>
+This is a test page，，，
+
+
+</code></pre></div><p>开启本地服务，查看预览</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo server -D
+</code></pre></div><h3 id="34-建立站点">3.4 建立站点<a href="#34-建立站点" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>在博客根目录下执行：</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo
+</code></pre></div><p><img src="https://gitee.com/wkendXu/typora-picture/raw/master/image-20210506140446634.png" alt="image-20210506140446634"></p>
+<p>此时你的博客目录下会多出一个 <code>public </code>文件夹来，这便是 Hugo 生成的网站。</p>
+<h2 id="0x04-发布">0x04 发布<a href="#0x04-发布" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p><code>Hugo</code> 并没有提供自动发布到 <code>GitHub Pages</code> 的功能。需要将 <code>public</code> 中的内容手动上传到 <code>Github</code> 上。 首先执行命令 <code>cd public</code> 进入到 <code>public</code> 文件夹中 然后执行</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> public/
+$ git init
+$ git remote add origin https://github.com/wkend/wkend.github.io.git
+$ git branch -M main
+$ git add -A
+$ git commit -m <span class="s2">&#34;first&#34;</span>
+$ git push -u origin main
+</code></pre></div>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://wkend.github.io/tags/%E4%B8%AA%E4%BA%BA">个人</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>842 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-05-06 15:33 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://wkend.github.io/posts/apachesolr%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>ApacheSolr任意文件读取漏洞复现</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://wkend.github.io/">wkend</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://wkend.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://wkend.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

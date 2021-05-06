@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on wkend&#39;s blog</title>
+    <link>https://wkend.github.io/tags/</link>
+    <description>Recent content in Tags on wkend&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 06 May 2021 15:33:07 +0800</lastBuildDate><atom:link href="https://wkend.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>个人</title>
+      <link>https://wkend.github.io/tags/%E4%B8%AA%E4%BA%BA/</link>
+      <pubDate>Thu, 06 May 2021 15:33:07 +0800</pubDate>
+      
+      <guid>https://wkend.github.io/tags/%E4%B8%AA%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>漏洞复现</title>
+      <link>https://wkend.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</link>
+      <pubDate>Thu, 06 May 2021 13:43:10 +0800</pubDate>
+      
+      <guid>https://wkend.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wkend&#39;s blog</title>
+    <link>https://wkend.github.io/</link>
+    <description>Recent content on wkend&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 06 May 2021 15:33:07 +0800</lastBuildDate><atom:link href="https://wkend.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github&#43;hugo搭建个人博客</title>
+      <link>https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 06 May 2021 15:33:07 +0800</pubDate>
+      
+      <guid>https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>0x01 github新建仓库 Repository name：xxx.github.io 进入仓库设置： 进入Pages页面， 建立GitHub Pages 验证，访问地址https:/</description>
+    </item>
+    
+    <item>
+      <title>ApacheSolr任意文件读取漏洞复现</title>
+      <link>https://wkend.github.io/posts/apachesolr%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</link>
+      <pubDate>Thu, 06 May 2021 13:43:10 +0800</pubDate>
+      
+      <guid>https://wkend.github.io/posts/apachesolr%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</guid>
+      <description>0x01 漏洞说明 Solr是一个高性能，采用Java5开发，基于Lucene的全文搜索服务器。Solr是一个独立的企业级搜索应用服务器，很多企业运用</description>
+    </item>
+    
+    <item>
+      <title>wkend&#39;s Blog</title>
+      <link>https://wkend.github.io/about-hugo/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wkend.github.io/about-hugo/</guid>
+      <description>This is wkend&amp;rsquo;s Blog.</description>
+    </item>
+    
+  </channel>
+</rss>

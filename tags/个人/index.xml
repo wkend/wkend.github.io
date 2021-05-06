@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>个人 on wkend&#39;s blog</title>
+    <link>https://wkend.github.io/tags/%E4%B8%AA%E4%BA%BA/</link>
+    <description>Recent content in 个人 on wkend&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 06 May 2021 15:33:07 +0800</lastBuildDate><atom:link href="https://wkend.github.io/tags/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github&#43;hugo搭建个人博客</title>
+      <link>https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 06 May 2021 15:33:07 +0800</pubDate>
+      
+      <guid>https://wkend.github.io/posts/github&#43;hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>0x01 github新建仓库 Repository name：xxx.github.io 进入仓库设置： 进入Pages页面， 建立GitHub Pages 验证，访问地址https:/</description>
+    </item>
+    
+  </channel>
+</rss>
